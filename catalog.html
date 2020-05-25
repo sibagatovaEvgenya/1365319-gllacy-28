@@ -33,7 +33,9 @@
       <button type="submit" name="submit" value="Войти">Войти</button>
       <a href="">Забыли пароль? <br>Новая регистрация </a>
     </form>
-    <a href="" class="cart">Пусто</a>
+    <a href="" class="cart">
+      <img src="https://via.placeholder.com/150x100" alt="">
+      Пусто</a>
   </header>
   <main>
     <div>
@@ -54,45 +56,46 @@
 
     <form action="https://echo.htmlacademy.ru/" class="filtr" method="post">
       <label for="popular">Сортировка:</label>
-      <div><select name="sorting">
+      <div>
+        <select name="sorting">
           <option id="popular">по популярности</option>
           <option>сначала недорогие</option>
           <option>сначала дорогие</option>
           <option>по жирности</option>
-        </select></div>
+        </select>
+      </div>
       <div class="price">
-      <label for="range_left">Цена: 100 Р - 500 Р</label>
-      <div class="range_price">
-        <input  type="range" step="any" max="800" min="0" value="100" id="range_left" >
-        <input  type="range" step="any" max="800" min="0" value="500" >
+        <label for="range_left">Цена: 100 Р - 500 Р</label>
+        <div class="range_price">
+          <input  type="range" step="any" max="800" min="0" value="100" id="range_left" >
+          <input  type="range" step="any" max="800" min="0" value="500" >
+        </div>
       </div>
-    </div>
-    <div class="fat">
-      <label for="radio1">Жирность:</label>
-      <div class="radio_fat">
-        <p><input type="radio" id="radio1" name="fat_procent" value="0%">0%</p>
-        <p><input type="radio" name="fat_procent" value="less 10%" checked>до 10%</p>
-        <p><input type="radio" name="fat_procent" value="less 30%">до 30%</p>
-        <p><input type="radio" name="fat_procent" value="more 30%">выше 30%</p>
+      <div class="fat">
+        <label for="radio1">Жирность:</label>
+        <div class="radio_fat">
+          <p><input type="radio" id="radio1" name="fat_procent" value="0%">0%</p>
+          <p><input type="radio" name="fat_procent" value="less 10%" checked>до 10%</p>
+          <p><input type="radio" name="fat_procent" value="less 30%">до 30%</p>
+          <p><input type="radio" name="fat_procent" value="more 30%">выше 30%</p>
+        </div>
       </div>
-    </div>
-    <div>
-      <label for="checkbox1">Наполнители:</label>
-      <div class="fillers">
-        <p><input type="checkbox" id="checkbox1" name="filler" value="chocolate" checked>шоколадные</p>
-        <p><input type="checkbox" name="filler" value="sugar" checked>сахарные присыпки</p>
-        <p><input type="checkbox" name="filler" value="fruit">фрукты</p>
-        <p><input type="checkbox" name="filler" value="juice">сиропы</p>
-        <p><input type="checkbox" name="filler" value="jam">джемы</p>
+      <div>
+        <label for="checkbox1">Наполнители:</label>
+        <div class="fillers">
+          <p><input type="checkbox" id="checkbox1" name="filler" value="chocolate" checked>шоколадные</p>
+          <p><input type="checkbox" name="filler" value="sugar" checked>сахарные присыпки</p>
+          <p><input type="checkbox" name="filler" value="fruit">фрукты</p>
+          <p><input type="checkbox" name="filler" value="juice">сиропы</p>
+          <p><input type="checkbox" name="filler" value="jam">джемы</p>
+        </div>
       </div>
-    </div>
-    <button type="submit" name="button">Применить</button>
-
+      <button type="submit" name="button">Применить</button>
     </form>
 
   </section>
-    <section>
-      <h2>Список сливочного мороженого</h2>
+    <article>
+      <h2>Перечень сливочного мороженого</h2>
       <ul>
         <li>
           <a href="">
@@ -181,7 +184,7 @@
       </ul>
       <ul>
         <li>
-          <button type="button" name="button"></button>
+          <button type="button" name="button"><</button>
         </li>
         <li>
           <a href="">1</a>
@@ -202,41 +205,39 @@
           <button type="button" name="button">></button>
         </li>
       </ul>
-
-     </section>
-
+    </article>
   </main>
   <footer>
-    <section>
-      <a class="social social-fb" href="">facebook</a>
-      <a class="social social-vk" href="">vkontakte</a>
-      <a class="social social-inst" href="">instagram</a>
-      <a class="social social-tw" href="">twiter</a>
-    </section>
-    <section>
-      <div>
-        <ul>
-          <li><a href="#"><strong>Для поставщиков</strong></a></li>
-          <li><a href="#">О производстве</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="https://via.placeholder.com/150x100" alt="logo html academy">
-          <b>html academy</b>
-        </a>
-                <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        &#169;2019 </p>
-      </div>
-    </section>
+    <ul>
+      <li>
+        <a class="social social-fb" href="">facebook</a>
+      </li>
+      <li>
+        <a class="social social-vk" href="">vkontakte</a>
+      </li>
+      <li>
+        <a class="social social-inst" href="">instagram</a>
+      </li>
+      <li>
+        <a class="social social-tw" href="">twiter</a>
+      </li>
+    </ul>
+    <div>
+      <ul>
+        <li><a href="#"><strong>Для поставщиков</strong></a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="https://via.placeholder.com/150x100" alt="logo html academy">
+        <b>html academy</b>
+      </a>
+      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      &#169;2019 </p>
+    </div>
   </footer>
 </body>
 </html>
