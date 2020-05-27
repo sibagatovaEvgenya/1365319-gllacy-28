@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 <header>
-  <nav>
-  <a >
-    <img src="img/logo.svg" alt="Логотип Gllacy shop">
+  <a>
+    <img src="img/logo.svg" alt="Gllacy shop">
   </a>
+  <nav>
     <ul class="main-menu">
       <li><a href="">Каталог</a>
         <ul class="menu">
@@ -24,21 +25,19 @@
       <li><a href="">О Компании</a></li>
     </ul>
   </nav>
-  <form class="search" action="https://echo.htmlacademy.ru/" method="get" >
-    <img src="icon-search" alt="Поиск">
+  <form class="" action="https://echo.htmlacademy.ru/" method="get">
+      <img src="img/icon-search.svg" alt="Найти мороженое по названию">
     <input type="search" name="search" placeholder="Крем брюле">
   </form>
   <form action="https://echo.htmlacademy.ru/" class="login" method="post">
-    <img src="img/enter.svg" alt="Вход" >
+    <img src="img/enter.svg" alt="Войти в вашу учетную запись" >
     <input type="email" name="logimEmail" placeholder="email@example.com">
     <input type="password" name="loginPassword" placeholder="......">
     <button type="submit" name="submit" value="Войти">Войти</button>
-    <a href="">
-      <p>Забыли пароль? <br>Новая регистрация </p>
-    </a>
+    <a href="">Забыли пароль? <br>Новая регистрация </a>
   </form>
   <a href="" class="cart">
-    <img src="https://via.placeholder.com/150x100" alt="">
+    <img src="img/cart.svg" alt="Добавить в корзину">
     Пусто</a>
 </header>
 <main>
@@ -90,7 +89,7 @@
     <h2>Перечень сливочного мороженого</h2>
     <ul>
       <li>
-        <span>Хит</span>
+        <img src="img/hit.png" alt="Хит">
         <a href="">
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
         </a>
@@ -98,7 +97,7 @@
         <a href="">Быстрый просмотр</a>
       </li>
       <li>
-        <span>Хит</span>
+        <img src="img/hit.png" alt="Хит">
         <a href="">
           <h3>Сливочно-кофейное с кусочками шоколада</h3>
         </a>
@@ -106,7 +105,7 @@
         <a href="">Быстрый просмотр</a>
       </li>
       <li>
-        <span>Хит</span>
+        <img src="img/hit.png" alt="Хит">
         <a href="">
           <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
         </a>
@@ -114,7 +113,7 @@
         <a href="">Быстрый просмотр</a>
       </li>
       <li>
-        <span>Хит</span>
+        <img src="img/hit.png" alt="Хит">
         <a href="">
           <h3>Сливочное крем-брюле с карамельной подливкой</h3>
         </a>
@@ -127,28 +126,23 @@
     <h2>Преимущества</h2>
       <h3>Магазин Глэйси - это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес </h3>
       <ul>
-        <li>
-
+        <li class="icon, icon-ice-cream">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
             оборудования и проверенных временем технологий.</p>
         </li>
-        <li>
-
+        <li class="icon, icon-eco">
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
              Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
-        <li>
-
+        <li class="icon, icon-cow">
           <p>Закупка ингридиентов производится только  проверенных фермерских хозяйств и компаний,
              с которыми нас всязывает долговременное сотрудничество.</p>
         </li>
-        <li>
-
+        <li class="icon, icon-termometr">
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопакете,
           который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
-
   </section>
   <article>
     <h2>Новое в нашем блоге</h2>
@@ -166,7 +160,7 @@
   </section>
   <section>
     <div class="map">
-      <img src="https://via.placeholder.com/150x100" alt="icon ice-cream">
+      <img src="img/map-marker.svg" alt="Адрес главного офиса и офлайн-магазина">
       <div>
         <p>Адрес главного офиса и офлайн-магазина: <strong>ул. Большая Конюшенная, 19/8, Санкт-Петербург</strong> </p>
         <div>
@@ -196,7 +190,7 @@
   </ul>
   <div>
     <ul>
-      <li><a href="#"><strong>Для поставщиков</strong></a></li>
+      <li class="heart"><a href="#"><strong>Для поставщиков</strong></a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">Экологические стандарты</a></li>
@@ -204,8 +198,7 @@
   </div>
   <div>
     <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="https://via.placeholder.com/150x100" alt="logo html academy">
-      <b>html academy</b>
+      <img src="img/logo-htmlacademy.svg" alt="Сайт сделан в html academy">
     </a>
     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     &#169;2019 </p>

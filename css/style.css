@@ -1,0 +1,10 @@
+:root {
+  --green-color: #849D8F,
+  --greenlight-color: #D7F2E3,
+
+
+}
+body{
+  margin:0;
+  background-color: #849D8F;
+}
