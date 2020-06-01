@@ -1,10 +1,37 @@
 :root {
-  --green-color: #849D8F,
-  --greenlight-color: #D7F2E3,
+  --green-color: #849D8F;
+  --greenlight-color: rgba(215, 242, 227, 0.75);
+  --blue-color: #8996A6;
+  --bluelight-color: rgba(218, 228, 239, 0.75);
+  --brown-color: #9D8B84;
+  --brownlight-color: rgba(239, 224, 218, 0.75);
+  --redbutton-color: #E84D37;
+  --write-color: #FFFFFF;
+  --whitetwenty-color: rgba(255, 255, 255, 0.2);
+  --darkblack-color: #353535;
+  --blackwrite-color: #323232;
+  --gray-color: #999999;
+  --grayvisibillyty-color:rgba(178, 178, 178, 0.52);
 
 
 }
 body{
   margin:0;
   background-color: #849D8F;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin:-1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
