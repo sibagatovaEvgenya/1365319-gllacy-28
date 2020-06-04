@@ -25,7 +25,12 @@ img{
 a{
   text-decoration: none;
 }
-.visually-hidden{
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+label, .visually-hidden{
   position: absolute;
   width: 1px;
   height: 1px;

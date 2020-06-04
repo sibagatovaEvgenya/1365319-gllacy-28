@@ -26,13 +26,21 @@
     </ul>
   </nav>
   <form class="" action="https://echo.htmlacademy.ru/" method="get">
-    <input type="search" name="search" placeholder="Крем брюле">
+    <label for="form-search">Поиск</label>
+    <input id="form-search" type="search" name="search" placeholder="Крем брюле">
   </form>
   <form action="https://echo.htmlacademy.ru/" class="login" method="post">
-    <input type="email" name="logimEmail" placeholder="email@example.com">
-    <input type="password" name="loginPassword" placeholder="......">
+    <p>
+      <label for="register-email">Почта</label>
+      <input id="register-email" type="email" name="logimEmail" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="register-password">Пароль</label>
+      <input id="register-password" type="password" name="loginPassword" placeholder="......">
+    </p>
     <button type="submit" name="submit" value="Войти">Войти</button>
-    <a href="">Забыли пароль? <br>Новая регистрация </a>
+    <a href="">Забыли пароль?</a><br>
+    <a href=""> Новая регистрация </a>
   </form>
   <a href="" class="cart">
     Пусто</a>
@@ -83,7 +91,7 @@
   </section>
 
   <article>
-    <h2>Перечень сливочного мороженого</h2>
+    <h2 class="visually-hidden">Перечень сливочного мороженого</h2>
     <ul>
       <li>
         <img src="https://via.placeholder.com/150x100"  alt="">
@@ -170,16 +178,16 @@
     </div>
     <form action="https://echo.htmlacademy.ru/" class="feedback" method="post">
       <p>
-        <label for="appointment-name"></label>
-        <input id="appointment-name" type="text" name="name">
+        <label for="appointment-name">Ваше имя и фамилия</label>
+        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label for=""></label>
-        <input type="text">
+        <label for="appointment-email">Электронная почта</label>
+        <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p>
-        <label for=""></label>
-        <input type="text">
+        <label for="appointment-text">Текст сообщения</label>
+        <input id="appointment-text" type="text" name="mail" placeholder="В свободной форме">
       </p>
       <button type="submit" name="button">Отправить</button>
     </form>
