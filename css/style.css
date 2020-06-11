@@ -217,12 +217,15 @@ p .worktime{
   background-image: url("../img/chocolate.png");
   background-repeat: no-repeat;
 }
-.bonus {
+.bonus p, .bonus a{
   font-weight: 700;
   font-size: 18px;
+  line-height: 22px;
 }
 .bonus h3{
   font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
 }
 /* Button*/
 .button {
@@ -243,12 +246,13 @@ p .worktime{
 .advantages h3{
   color:var(--blackwrite-color);
   font-size: 24px;
-  font-weight: 500;
+  line-height: 30px;
 }
 .advantages p{
   color:var(--blackwrite-color);
   font-size: 16px;
   font-weight: 400;
+  line-height: 22px;
 }
 .icon-ice-cream {
   background-image: url("../img/icon-ice-cream.svg");
@@ -280,15 +284,23 @@ p .worktime{
   font-size: 16px;
 }
 .blog h3{
+  display: inline-block;
   font-size: 24px;
   font-weight: 700;
   color: var(--blackwrite-color);
+  line-height: 30px;
+  border-bottom: 3px solid var(--blackwrite-color);
+  height: 24px;
 }
-div .mailing{
+.blog a{
+  text-decoration:none;
+}
+div .mailing p{
   background-color: var(--forma-color);
   color: var(--darkgray-color);
   font-size: 16px;
   font-weight: 400;
+  line-height: 22px;
 }
 /* Address */
 .map{
@@ -307,11 +319,13 @@ div.address p{
   color: var(--blackwrite-color);
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 div.address strong, .address .tel{
   font-size: 18px;
   font-weight: 700;
   color: var(--blackwrite-color);
+  line-height: 24px;
 }
 /* Social-button */
 .social-fb{
@@ -382,12 +396,10 @@ div.address strong, .address .tel{
   font-size: 15px;
   font-weight: 700;
 }
-/* Не получается увеличить ссылку до необходимых размеров */
+
 .check-out a{
   font-size: 18px;
-  width: 172px;
-  height: 44px;
-  padding: 5px 30px 5px 30px;
+
 }
 .crumbs a{
   font-size: 14px;
@@ -396,10 +408,13 @@ div.address strong, .address .tel{
 /* catalog */
 article h3{
   font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
 .product-hover p{
   font-size: 30px;
   font-weight: 700;
+
 }
 .product-hover strong{
   font-size: 45px;
@@ -409,4 +424,8 @@ article h3{
   background-color: var(--whitetwenty-color);
   width: 293px;
   height: 402px;
+}
+.paginator{
+  font-size: 16px;
+  line-height: 18px;
 }
