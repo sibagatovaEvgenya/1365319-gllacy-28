@@ -97,6 +97,11 @@ input::-webkit-input-placeholder{
 input:-moz-placeholder{
   color:var(--gray-color);
 }
+.conteiner{
+  width: 100%;
+  max-width: 1148px;
+  margin: 0 auto;
+}
 /* Grid */
 
 .page {
@@ -545,6 +550,7 @@ div.address strong, .address .tel{
 .product-hover{
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   padding: 0;
   margin: 0;
   margin-bottom: 80px;
@@ -558,45 +564,57 @@ div.address strong, .address .tel{
 }
 
 .product-hover li{
+  display:block;
+  height: 100%;
   width: 267px;
   height: 320px;
   text-align: center;
   align-self: center;
 }
+.product-hover li:hover{
+  position: absolute;
+  content: '';
+  height: 100%;
+  background-color: var(--whitetwenty-color);
+  width: 293px;  
+  text-align: center;
+}
+.catalog-item .button{
+  display: none;
+}
+.catalog-item:hover .button{
+  position: absolute;
+  z-index: 1;
+}
+.product-hover strong{
+  font-size: 45px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.product-hover p{
+  font-size: 30px;
+  font-weight: 700;
+}
 .catalog-item-price{
   display: flex;
   margin: 0px;
-  
+  margin-top: -75px
 }
  .catalog-item h3{
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  margin-top: 17px;
+  margin-top: 0px;
   margin-right: 26px;
   margin-bottom: 40px;
   margin-left: 0px;
   padding: 0px;
   padding-right: 11px;
   padding-left: 10px;
+}
 
 
-}
-.product-hover p{
-  font-size: 30px;
-  font-weight: 700;
 
-}
-.product-hover strong{
-  font-size: 45px;
-  font-weight: 700;
-}
-.product-hover li:hover{
-  background-color: var(--whitetwenty-color);
-  width: 293px;
-  height: 402px;
-  text-align: center;
-}
 .paginator{
   font-size: 16px;
   line-height: 18px;
