@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page-body">
-<header class="main-header">
+<header class="main-header conteiner">
   <a class="main-header-logo">
-    <img src="img/logo.svg" width="154" height="64" alt="Gllacy shop">
+    <img src="img/logo.svg" width="154"  alt="Gllacy shop">
   </a>
   <nav class="main-navigation">
     <ul class="main-menu">
@@ -29,14 +29,14 @@
   <div class="search-form form">
     <button type="button" class="button-search" name="button">
     </button>
-    <form class="search" action="https://echo.htmlacademy.ru/" method="get">
+    <form class="search-form-text" action="https://echo.htmlacademy.ru/" method="get">
       <label for="form-search">Поиск</label>
       <input id="form-search" type="search" name="search" placeholder="Крем брюле">
     </form>
   </div>
-  <div class=" form-hidden">
+  <div class="form-enter">
     <button type="button" class="form-enter" name="button">Войти</button>
-    <form action="https://echo.htmlacademy.ru/" class="login" method="post">
+    <form action="https://echo.htmlacademy.ru/" class="login-form" method="post">
       <p>
         <label for="register-email">Почта</label>
         <input id="register-email" type="email" name="logimEmail" placeholder="email@example.com">
@@ -52,8 +52,7 @@
   </div>
   <button type="button" class="button-cart" name="button">Пусто</button>
 </header>
-<main>
-  <div class="conteiner">
+<main class="conteiner">
     <h1 class="visually-hidden">Gllacy Shop</h1>
     <p class="worktime">c 10 до 20,ежедневно</p>
     <a class="tel" href="tel:88124502525">8 812 450-25-25</a>
@@ -179,37 +178,36 @@
         </div>
       </section>
     </section>
-  </div>
-  <section class="map">
-    <span class="map-marker"></span>
-    <div class="address">
-        <p>Адрес главного офиса и офлайн-магазина: <strong>ул. Большая Конюшенная, 19/8, Санкт-Петербург</strong> </p>
-        <div>
-          <p>Для заказов по телефону:</p>
-          <a class="tel" href="tel:88124502525">8 812 450-25-25</a>
-          <p>(с 10 до 20 ежедневно)</p>
-        </div>
-        <button type="button" class="button" name="form_callback">Форма обратной связи</button>
-    </div>
-    <form action="https://echo.htmlacademy.ru/" class="feedback" method="post">
-      <p>
-        <label for="appointment-name">Ваше имя и фамилия</label>
-        <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="appointment-email">Электронная почта</label>
-        <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="appointment-text">Текст сообщения</label>
-        <input id="appointment-text" type="text" name="mail" placeholder="В свободной форме">
-      </p>
-      <button class="button" type="submit" name="button">Отправить</button>
-    </form>
-    <button type="button" name="button">Закрыть</button>
-  </section>
 </main>
-<footer class="page-footer">
+<section class="map">
+  <span class="map-marker"></span>
+  <div class="address">
+      <p>Адрес главного офиса и офлайн-магазина: <strong>ул. Большая Конюшенная, 19/8, Санкт-Петербург</strong> </p>
+      <div>
+        <p>Для заказов по телефону:</p>
+        <a class="tel" href="tel:88124502525">8 812 450-25-25</a>
+        <p>(с 10 до 20 ежедневно)</p>
+      </div>
+      <button type="button" class="button" name="form_callback">Форма обратной связи</button>
+  </div>
+  <form action="https://echo.htmlacademy.ru/" class="feedback" method="post">
+    <p>
+      <label for="appointment-name">Ваше имя и фамилия</label>
+      <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="appointment-email">Электронная почта</label>
+      <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="appointment-text">Текст сообщения</label>
+      <input id="appointment-text" type="text" name="mail" placeholder="В свободной форме">
+    </p>
+    <button class="button" type="submit" name="button">Отправить</button>
+  </form>
+  <button type="button" name="button">Закрыть</button>
+</section>
+<footer class="page-footer conteiner">
   <ul class="footer-social">
     <li>
       <a class="social social-fb" href="">facebook</a>

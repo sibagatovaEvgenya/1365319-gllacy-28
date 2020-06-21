@@ -98,12 +98,10 @@ input:-moz-placeholder{
   color:var(--gray-color);
 }
 .conteiner{
-  width: 100%;
-  max-width: 1148px;
+  width: 1148px;
   margin: 0 auto;
 }
 /* Grid */
-
 .page {
   height: 100%;
 }
@@ -176,12 +174,14 @@ ul.submenu a:not([href]){
   border: none;
 }
 
-.button-search form {
+.search-form-text {
   display: none;
 }
 
-.button-search:hover form .search{
-  display: block;
+.search-form:hover  .search-form-text,
+.search-form:focus .search-form-text,
+.search-form:active  .search-form-text{
+  display: flex;
 }
 .button-search:hover{
   background-image: url("../img/search-hover.svg");
@@ -212,6 +212,12 @@ ul.submenu a:not([href]){
 .form-enter:hover {
   background-image: url("../img/enter-hover.svg");
   background-repeat: no-repeat;
+}
+.login-form{
+  display: none;
+}
+.form-enter:hover .login-form{
+  display: block;
 }
 .button-cart{
   background-image: url("../img/cart.svg");
@@ -251,7 +257,6 @@ p .worktime{
 }
 .bonus{
   width: 560px;
-
 }
 .bonus p, .bonus a{
   font-weight: 700;
@@ -265,13 +270,11 @@ p .worktime{
   line-height: 41px;
   font-weight: 700;
   margin: 16px;
-
 }
 .features{
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-
 }
 
 
@@ -285,7 +288,6 @@ p .worktime{
   background-image: linear-gradient( #F26843, #E74A35);
   border-radius: 50px;
   border: none;
-
 }
 
 /* Advantages */
@@ -304,16 +306,12 @@ p .worktime{
 .icon{
   margin-left: 20px;
   margin-top: 7px;
-
-
 }
 .advantages h3{
   color:var(--blackwrite-color);
   font-size: 24px;
   line-height: 30px;
   margin-left: 20px;
-
-
 }
 .advantages p{
   color:var(--blackwrite-color);
@@ -355,7 +353,6 @@ p .worktime{
   color: var(--blackwrite-color);
   padding-left: 20px;
   width: 560px;
-
 }
 .blog h2{
   font-size: 16px;
@@ -391,13 +388,16 @@ div .mailing p{
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  content: '';
 }
 .map-marker{
   background-image: url("../img/map-marker.svg");
   z-index:1;
 }
 .address{
-
+  position:absolute;
+  left: 50%;
+  transform: translateX(270px);
   background-color: var(--nearwhite-color);
   width: 303px;
 }
@@ -414,6 +414,9 @@ div.address strong, .address .tel{
   line-height: 24px;
 }
 /* forma feedback */
+.feedback{
+  display:none;
+}
 .feedback p{
   margin: 0;
   margin-bottom: 10px;
@@ -450,14 +453,13 @@ div.address strong, .address .tel{
   background-repeat: no-repeat;
 }
 .social-tw{
-  background-image: url("../img/tvitter.svg");
+  background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
 }
 /* footer-menu */
 
 .about-us{
   width: 340px;
-  max-height:
   margin:0;
   padding-top: 18px;
   font-size: 13px;
@@ -518,7 +520,6 @@ div.address strong, .address .tel{
 
 .check-out a{
   font-size: 18px;
-
 }
 /* main */
 
@@ -527,7 +528,6 @@ div.address strong, .address .tel{
   justify-content: space-between;
   width: 100%;
   margin-bottom: 9px;
-
 }
 .main-worktime p{
   margin:0;
@@ -555,35 +555,34 @@ div.address strong, .address .tel{
   margin: 0;
   margin-bottom: 80px;
 }
-.catalog-item{
-
-  margin-right: 20px;
+.product-hover .catalog-item{
+  display:block;
+  width: 267px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 20px;
   background-color: var(--basic-extra-light);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 }
-
-.product-hover li{
-  display:block;
-  height: 100%;
-  width: 267px;
-  height: 320px;
-  text-align: center;
-  align-self: center;
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
-.product-hover li:hover{
-  position: absolute;
-  content: '';
-  height: 100%;
+.catalog-item:first-child, .catalog-item:nth-child(5n){
+  margin-left: 0;
+}
+.product-hover .catalog-item:hover{
+  position: relative;
   background-color: var(--whitetwenty-color);
-  width: 293px;  
-  text-align: center;
+  width: 293px;
+  margin: 0;
 }
 .catalog-item .button{
   display: none;
 }
 .catalog-item:hover .button{
-  position: absolute;
+  display: block;
+  position: relative;
   z-index: 1;
 }
 .product-hover strong{
@@ -604,7 +603,7 @@ div.address strong, .address .tel{
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  margin-top: 0px;
+  margin-top: 37px;
   margin-right: 26px;
   margin-bottom: 40px;
   margin-left: 0px;
