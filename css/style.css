@@ -117,8 +117,12 @@ input:-moz-placeholder{
   display: flex;
 }
 .main-menu {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  width: 620px;
+  max-width: 700px;
+  min-height:72px;
+  outline: 5px solid #ff0000;
 
 }
 .main-navigation{
@@ -129,8 +133,16 @@ input:-moz-placeholder{
   margin-right: 24px;
 }
 .main-menu  a{
+  display:block;
+  padding: 16px;
   font-size: 16px;
   font-weight: 700;
+}
+.main-menu:last-child{
+  padding-right: 0;
+}
+.main-menu .top a{
+  padding-left: 0px;
 }
 li.top ul.submenu{
   display:none;
@@ -164,16 +176,24 @@ ul.submenu a:not([href]){
   /* User navigation */
 
 .button-search{
+  position: relative;
   background-color: var(--whitetwenty-color);
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   vertical-align: middle;
   border: none;
-}
 
+}
+.button-search::before{
+  position: absolute;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 50px;
+
+
+}
 .search-form-text {
   display: none;
 }
@@ -191,7 +211,13 @@ ul.submenu a:not([href]){
   width: 103px;
   height: 44px;
 }
-.form-enter, .button-cart{
+.search-form, .form-enter, .form-cart {
+
+  outline: 5px solid #ff0000;
+}
+
+.button-enter, .button-cart{
+  position: relative;
   background-color: var(--whitetwenty-color);
   vertical-align: middle;
   color: var(--white-color);
@@ -200,14 +226,19 @@ ul.submenu a:not([href]){
   font-size: 14px;
   border: none;
   padding-left: 20px;
+
 }
 .form-enter:hover, .button-cart:hover, {
   background-color: var(--white-color);
   color: var(--blackwrite-color);
 }
-.form-enter{
+.button-enter::before{
+  content: "";
   background-image: url("../img/enter.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 20px;
+  height: 19px;
 }
 .form-enter:hover {
   background-image: url("../img/enter-hover.svg");
@@ -388,7 +419,7 @@ div .mailing p{
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  content: '';
+  min-height: 430px;
 }
 .map-marker{
   background-image: url("../img/map-marker.svg");
@@ -568,8 +599,14 @@ div.address strong, .address .tel{
 .catalog-item:nth-child(4n) {
   margin-right: 0;
 }
+.catalog-item:nth-child(4n):hover{
+  margin-right: -10px;
+}
 .catalog-item:first-child, .catalog-item:nth-child(5n){
   margin-left: 0;
+}
+.catalog-item:first-child:hover, .catalog-item:nth-child(5n):hover{
+  margin-left: -10px;
 }
 .product-hover .catalog-item:hover{
   position: relative;
